@@ -4,9 +4,9 @@
       <members>*</members>
       <name>CustomLabels</name>
     </types>
-     <types>
-      <members>*</members>
-      <name>Translations</name>
-    </types>
+	<types>
+	  <members>*</members>
+	  <name>Translations</name>
+	</types>
 	<version>61.0</version>
 </Package>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ATM_Fee_In_Other_Currencies</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ATM Fee In Other Currencies</shortDescription>
+        <value>ATM Fee In Other Currencies</value>
+    </labels>
+    <labels>
+        <fullName>Card_Replacement_Cost</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Card Replacement Cost</shortDescription>
+        <value>Card Replacement Cost</value>
+    </labels>
+    <labels>
+        <fullName>Cost_Per_Calendar_Month</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cost Per Calendar Month</shortDescription>
+        <value>Cost Per Calendar Month</value>
+    </labels>
+    <labels>
+        <fullName>Country</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Country</shortDescription>
+        <value>Country</value>
+    </labels>
+    <labels>
+        <fullName>Customer_Product_Information</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Customer Product Information</shortDescription>
+        <value>Customer Product Information</value>
+    </labels>
+    <labels>
+        <fullName>Product_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Product</shortDescription>
+        <value>Product</value>
+    </labels>
+</CustomLabels>
