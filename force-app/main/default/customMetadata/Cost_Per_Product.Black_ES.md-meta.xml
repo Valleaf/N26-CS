@@ -12,7 +12,11 @@
     </values>
     <values>
         <field>Cost_Per_Calendar_Month__c</field>
-        <value xsi:type="xsd:double">9.90</value>
+        <value xsi:type="xsd:double">9.9</value>
+    </values>
+    <values>
+        <field>Currency__c</field>
+        <value xsi:type="xsd:string">€</value>
     </values>
     <values>
         <field>Home_Country__c</field>

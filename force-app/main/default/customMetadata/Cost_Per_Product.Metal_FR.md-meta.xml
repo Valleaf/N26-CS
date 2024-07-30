@@ -15,6 +15,10 @@
         <value xsi:type="xsd:double">16.90</value>
     </values>
     <values>
+        <field>Currency__c</field>
+        <value xsi:type="xsd:string">€</value>
+    </values>
+    <values>
         <field>Home_Country__c</field>
         <value xsi:type="xsd:string">FR</value>
     </values>

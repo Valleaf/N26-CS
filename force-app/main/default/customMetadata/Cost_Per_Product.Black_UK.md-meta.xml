@@ -11,6 +11,14 @@
         <value xsi:type="xsd:double">6.0</value>
     </values>
     <values>
+        <field>Cost_Per_Calendar_Month__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Currency__c</field>
+        <value xsi:type="xsd:string">£</value>
+    </values>
+    <values>
         <field>Home_Country__c</field>
         <value xsi:type="xsd:string">UK</value>
     </values>
