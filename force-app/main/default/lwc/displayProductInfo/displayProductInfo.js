@@ -11,6 +11,7 @@ import costPerCalendarMonth from "@salesforce/label/c.Cost_Per_Calendar_Month";
 import country from "@salesforce/label/c.Country";
 import customerProductInformation from "@salesforce/label/c.Customer_Product_Information";
 import productName from "@salesforce/label/c.Product_Name";
+import free from "@salesforce/label/c.Free";
 
 export default class DisplayProductInfo extends LightningElement {
 
@@ -29,7 +30,8 @@ export default class DisplayProductInfo extends LightningElement {
         costPerCalendarMonth,
         country,
         customerProductInformation,
-        productName
+        productName,
+        free
     }
 
     /**

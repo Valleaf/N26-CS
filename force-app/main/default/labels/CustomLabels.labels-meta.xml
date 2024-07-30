@@ -36,6 +36,13 @@
         <value>Customer Product Information</value>
     </labels>
     <labels>
+        <fullName>Free</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Free</shortDescription>
+        <value>Free</value>
+    </labels>
+    <labels>
         <fullName>Product_Name</fullName>
         <language>en_US</language>
         <protected>true</protected>

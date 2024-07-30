@@ -21,6 +21,10 @@
         <name>Customer_Product_Information</name>
     </customLabels>
     <customLabels>
+        <label>Gratuito</label>
+        <name>Free</name>
+    </customLabels>
+    <customLabels>
         <label>Prodotto</label>
         <name>Product_Name</name>
     </customLabels>
