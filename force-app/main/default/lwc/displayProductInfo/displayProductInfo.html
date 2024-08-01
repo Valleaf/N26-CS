@@ -2,14 +2,14 @@
   @description       : 
   @author            : Valentin
   @group             : 
-  @last modified on  : 07-30-2024
+  @last modified on  : 08-01-2024
   @last modified by  : Valentin
 -->
 <template>
 
-    <lightning-card title="Customer Product Information" icon-name="standard:list_rate">
-        <div class="slds-m-around_medium">
-            <template lwc:if={currentCostPerProduct.data}>
+    <template lwc:if={currentCostPerProduct.data}>
+        <lightning-card title="Customer Product Information" icon-name="standard:list_rate">
+            <div class="slds-m-around_medium">
                 <!-- Make a table -->
                 <article class="slds-card">
                     <div class="slds-card__body">
@@ -79,10 +79,10 @@
                         </table>
                     </div>
                 </article>
-            </template>
-            <template lwc:elseif={currentCostPerProduct.error}>
-                ERREUR
-            </template>
-        </div>
-    </lightning-card>
+            </div>
+        </lightning-card>
+    </template>
+    <template lwc:elseif={currentCostPerProduct.error}>
+        ERREUR
+    </template>
 </template>

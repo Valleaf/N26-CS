@@ -8,7 +8,8 @@ public with sharing class DisplayProductInfoController{
      */
     @AuraEnabled(cacheable=true)
     public static Cost_Per_Product__mdt getCostPerProduct(String recordId){
-        System.debug(recordId);
+
+        // Get the case and get the cost per product related
         Case currentCase = [SELECT Contact.Product__c, Contact.Home_country__c FROM Case WHERE Id = :Id.valueOf(recordId)];
         String product = currentCase.Contact.Product__c;
         String homeCountry = currentCase.Contact.Home_country__c;

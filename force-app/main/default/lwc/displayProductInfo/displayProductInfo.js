@@ -5,13 +5,13 @@ import { LightningElement, wire, api, track } from 'lwc';
 import getCostPerProduct from '@salesforce/apex/DisplayProductInfoController.getCostPerProduct';
 
 // Labels
-import atm from "@salesforce/label/c.ATM_Fee_In_Other_Currencies";
-import cardReplacement from "@salesforce/label/c.Card_Replacement_Cost";
-import costPerCalendarMonth from "@salesforce/label/c.Cost_Per_Calendar_Month";
-import country from "@salesforce/label/c.Country";
-import customerProductInformation from "@salesforce/label/c.Customer_Product_Information";
-import productName from "@salesforce/label/c.Product_Name";
-import free from "@salesforce/label/c.Free";
+import atm from "@salesforce/label/c.LWC_ATM_FEE_IN_OTHER_CURRENCIES";
+import cardReplacement from "@salesforce/label/c.LWC_CARD_REPLACEMENT_COST";
+import costPerCalendarMonth from "@salesforce/label/c.LWC_COST_PER_CALENDAR_MONTH";
+import country from "@salesforce/label/c.LWC_COUNTRY";
+import customerProductInformation from "@salesforce/label/c.LWC_CUSTOMER_PRODUCT_INFORMATION";
+import productName from "@salesforce/label/c.LWC_PRODUCT_NAME";
+import free from "@salesforce/label/c.LWC_FREE";
 
 export default class DisplayProductInfo extends LightningElement {
 

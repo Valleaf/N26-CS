@@ -1,32 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Translations xmlns="http://soap.sforce.com/2006/04/metadata">
     <customLabels>
-        <label>Tassa bancomat in altre valute</label>
+        <label>Tasa de cajero automático en otras divisas</label>
         <name>LWC_ATM_FEE_IN_OTHER_CURRENCIES</name>
     </customLabels>
     <customLabels>
-        <label>Costo di sostituzione della carta</label>
+        <label>Coste de sustitución de la tarjeta</label>
         <name>LWC_CARD_REPLACEMENT_COST</name>
     </customLabels>
     <customLabels>
-        <label>Costo per mese solare</label>
+        <label>Coste por mes natural</label>
         <name>LWC_COST_PER_CALENDAR_MONTH</name>
     </customLabels>
     <customLabels>
-        <label>Paese</label>
+        <label>País</label>
         <name>LWC_COUNTRY</name>
     </customLabels>
     <customLabels>
-        <label>Informazioni sul prodotto del cliente</label>
+        <label>Información del cliente sobre el producto</label>
         <name>LWC_CUSTOMER_PRODUCT_INFORMATION</name>
     </customLabels>
     <customLabels>
-        <label>Gratuito</label>
+        <label>Gratis</label>
         <name>LWC_FREE</name>
     </customLabels>
     <customLabels>
-        <label>Prodotto</label>
+        <label>Producto</label>
         <name>LWC_PRODUCT_NAME</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- WS_CONTACTMISSINGINFO --></label>
+        <name>WS_CONTACTMISSINGINFO</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- WS_ERROR --></label>
+        <name>WS_ERROR</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- WS_NOPRODUCTINFO --></label>
+        <name>WS_NOPRODUCTINFO</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- WS_NORECORD --></label>
+        <name>WS_NORECORD</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- WS_NOTHINGTOUPSERT --></label>
+        <name>WS_NOTHINGTOUPSERT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- WS_UPSERTSUCCESS --></label>
+        <name>WS_UPSERTSUCCESS</name>
     </customLabels>
     <customLabels>
         <label><!-- tt_BaseURL --></label>
