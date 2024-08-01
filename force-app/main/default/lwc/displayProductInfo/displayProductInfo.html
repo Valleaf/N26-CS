@@ -8,7 +8,7 @@
 <template>
 
     <template lwc:if={currentCostPerProduct.data}>
-        <lightning-card title="Customer Product Information" icon-name="standard:list_rate">
+        <lightning-card title={label.customerProductInformation} icon-name="standard:list_rate">
             <div class="slds-m-around_medium">
                 <!-- Make a table -->
                 <article class="slds-card">
@@ -19,19 +19,19 @@
                             <thead>
                                 <tr class="slds-line-height_reset">
                                     <th class="" scope="col">
-                                        <div class="slds-truncate" title="Name">{label.productName}</div>
+                                        <div class="slds-truncate" title={label.productName}>{label.productName}</div>
                                     </th>
                                     <th class="" scope="col">
-                                        <div class="slds-truncate" title="Company">{label.country}</div>
+                                        <div class="slds-truncate" title={label.country}>{label.country}</div>
                                     </th>
                                     <th class="" scope="col">
-                                        <div class="slds-truncate" title="Title">{label.costPerCalendarMonth}</div>
+                                        <div class="slds-truncate" title={label.costPerCalendarMonth}>{label.costPerCalendarMonth}</div>
                                     </th>
                                     <th class="" scope="col">
-                                        <div class="slds-truncate" title="Email">{label.atm}</div>
+                                        <div class="slds-truncate" title={label.atm}>{label.atm}</div>
                                     </th>
                                     <th class="" scope="col">
-                                        <div class="slds-truncate" title="Email">{label.cardReplacement}</div>
+                                        <div class="slds-truncate" title={label.cardReplacement}>{label.cardReplacement}</div>
                                     </th>
                                 </tr>
                             </thead>
@@ -83,6 +83,6 @@
         </lightning-card>
     </template>
     <template lwc:elseif={currentCostPerProduct.error}>
-        ERREUR
+        
     </template>
 </template>

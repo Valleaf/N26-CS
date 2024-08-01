@@ -1,5 +1,5 @@
 // SF
-import { LightningElement, wire, api, track } from 'lwc';
+import { LightningElement, wire, api } from 'lwc';
 
 // Functions
 import getCostPerProduct from '@salesforce/apex/DisplayProductInfoController.getCostPerProduct';
