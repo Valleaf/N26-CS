@@ -1,0 +1,88 @@
+<!--
+  @description       : 
+  @author            : Valentin
+  @group             : 
+  @last modified on  : 08-01-2024
+  @last modified by  : Valentin
+-->
+<template>
+
+    <template lwc:if={currentCostPerProduct.data}>
+        <lightning-card title={label.customerProductInformation} icon-name="standard:list_rate">
+            <div class="slds-m-around_medium">
+                <!-- Make a table -->
+                <article class="slds-card">
+                    <div class="slds-card__body">
+                        <table
+                            class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-table_fixed-layout"
+                            role="grid" aria-label="Product Info Table">
+                            <thead>
+                                <tr class="slds-line-height_reset">
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title={label.productName}>{label.productName}</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title={label.country}>{label.country}</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title={label.costPerCalendarMonth}>{label.costPerCalendarMonth}</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title={label.atm}>{label.atm}</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title={label.cardReplacement}>{label.cardReplacement}</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="slds-hint-parent">
+                                    <th scope="row">
+                                        <div class="slds-truncate" title={currentCostPerProduct.data.Product__c}>
+                                            <a href="#" tabindex="-1">{currentCostPerProduct.data.Product__c}</a>
+                                        </div>
+                                    </th>
+                                    <td role="gridcell">
+                                        <div class="slds-truncate" title={currentCostPerProduct.data.Home_Country__c}>
+                                            {currentCostPerProduct.data.Home_Country__c}</div>
+                                    </td>
+                                    <td role="gridcell">
+                                        <div class="slds-truncate"
+                                            title={currentCostPerProduct.data.Cost_Per_Calendar_Month__c}>
+                                            <!-- Show the cost if is not null, otherwise show N/A -->
+                                            <template lwc:if={IscostPerMonthNotNull}>
+                                                {currentCostPerProduct.data.Cost_Per_Calendar_Month__c}
+                                                {currency}
+                                            </template>
+                                            <template lwc:else>N/A</template>
+                                        </div>
+                                    </td>
+                                    <td role="gridcell">
+                                        <div class="slds-truncate"
+                                            title={currentCostPerProduct.data.ATM_Fee_in_other_currencies__c}>
+                                            <!-- If ATM fee is 0 , write down the custom label for "Free" Instead -->
+                                            <template lwc:if={isAtmPaid}>
+                                                {currentCostPerProduct.data.ATM_Fee_in_other_currencies__c}%
+                                            </template>
+                                            <template lwc:else>{label.free}</template>
+                                        </div>
+                                    </td>
+                                    <td role="gridcell">
+                                        <div class="slds-truncate"
+                                            title={currentCostPerProduct.data.Card_Replacement_Cost__c}>
+                                            {currentCostPerProduct.data.Card_Replacement_Cost__c}
+                                            {currency}</div>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+            </div>
+        </lightning-card>
+    </template>
+    <template lwc:elseif={currentCostPerProduct.error}>
+        
+    </template>
+</template>
