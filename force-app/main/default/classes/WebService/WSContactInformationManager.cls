@@ -88,7 +88,7 @@ global with sharing class WSContactInformationManager{
 
     /**
      * @HttpPut - upsert
-     * @param jsonString - JSON containing the list of contacts
+     * @param jsonString in the request body - JSON containing the list of contacts
      * @return void
      */
     @HttpPut

@@ -11,8 +11,8 @@ public with sharing class DisplayProductInfoController{
 
         // Get the case and get the cost per product related
         Case currentCase = [SELECT Contact.Product__c, Contact.Home_country__c FROM Case WHERE Id = :Id.valueOf(recordId)];
-        String product = currentCase.Contact.Product__c;
-        String homeCountry = currentCase.Contact.Home_country__c;
+        String product = currentCase?.Contact.Product__c;
+        String homeCountry = currentCase?.Contact.Home_country__c;
         return Cost_Per_Product__mdt.getInstance(product + '_' + homeCountry);
     } 
     
